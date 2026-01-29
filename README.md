@@ -1,4 +1,4 @@
-# 🤖 Multi-Document RAG Assistant
+# 🤖 IQSight AI Chat Assistant
 
 ![Python](https://img.shields.io/badge/Python-3.9%2B-blue?logo=python&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Streamlit-App-FF4B4B?logo=streamlit&logoColor=white)
@@ -7,7 +7,7 @@
 
 ## Overview
 
-**Multi-Document RAG Assistant** is a web-based application that leverages Retrieval-Augmented Generation (RAG) to answer user queries based on multiple project documents. It uses vector embeddings to efficiently retrieve relevant context from multiple sources and feeds them into a language model to generate precise answers.
+**IQSight AI Chat Assistant** is a web-based application that leverages Retrieval-Augmented Generation (RAG) to answer user queries based on multiple project documents. It uses vector embeddings to efficiently retrieve relevant context from multiple sources and feeds them into a language model to generate precise answers.
 
 
 
