@@ -20,6 +20,8 @@
 
 ---
 
+
+
 ## 🏗 Project Structure
 
 ```text
@@ -32,41 +34,48 @@
 ├── .env                    # Environment variables 
 └── README.md               # Project documentation
 
----
+```
 
-# 🛠 Installation & Setup
+## 🛠 Installation & Setup
 
-## Clone the repository
+### Clone the repository
 ```bash
-git clone https://github.com/<your-username>/multi-document-rag-assistant.git
-cd multi-document-rag-assistant
+git clone https://github.com/ahmedelalfiee/IQSIGHT-AI-Chat-Assistant.git
+cd IQSIGHT-AI-Chat-Assistant
+```
 
-## Create and activate a Python virtual environment
+### Create and activate a Python virtual environment
 ```bash
 python -m venv .venv
 source .venv/bin/activate  # Linux/macOS
 .venv\Scripts\activate     # Windows
+```
 
-## Install dependencies
+### Install dependencies
 ```bash
 pip install -r requirements.txt
+```
 
-## Add your Azure OpenAI credentials in `.env`
+### Add your Azure OpenAI credentials in `.env`
 ```bash
 AZURE_OPENAI_KEY=<your_api_key>
 AZURE_OPENAI_ENDPOINT=<your_endpoint>
 AZURE_OPENAI_DEPLOYMENT=<your_llm_deployment>
+```
 
 ## 🚀 Running Locally
 ```bash
 streamlit run app.py
+```
 
 ## 🐳 Docker Deployment
 ```bash
 docker build -t IQSIGHT-AI-Chat-Assistant .
+```
+## Run the container locally
 ```bash
-##Run the container locally
 docker run -p 8501:8501 IQSIGHT-AI-Chat-Assistant
+```
 
 ### Deploy to Azure Web App
 
