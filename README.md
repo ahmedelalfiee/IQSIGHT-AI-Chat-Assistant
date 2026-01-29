@@ -29,5 +29,50 @@
 ├── docstore_<project>.pkl  # Precomputed document stores (Pickle format)
 ├── Dockerfile              # Configuration for Azure/Docker deployment
 ├── requirements.txt        # Python dependencies
-├── .env                    # Environment variables (Azure keys - DO NOT COMMIT)
+├── .env                    # Environment variables 
 └── README.md               # Project documentation
+
+---
+
+# 🛠 Installation & Setup
+
+## Clone the repository
+```bash
+git clone https://github.com/<your-username>/multi-document-rag-assistant.git
+cd multi-document-rag-assistant
+
+## Create and activate a Python virtual environment
+```bash
+python -m venv .venv
+source .venv/bin/activate  # Linux/macOS
+.venv\Scripts\activate     # Windows
+
+## Install dependencies
+```bash
+pip install -r requirements.txt
+
+## Add your Azure OpenAI credentials in `.env`
+```bash
+AZURE_OPENAI_KEY=<your_api_key>
+AZURE_OPENAI_ENDPOINT=<your_endpoint>
+AZURE_OPENAI_DEPLOYMENT=<your_llm_deployment>
+
+## 🚀 Running Locally
+```bash
+streamlit run app.py
+
+## 🐳 Docker Deployment
+```bash
+docker build -t IQSIGHT-AI-Chat-Assistant .
+```bash
+##Run the container locally
+docker run -p 8501:8501 IQSIGHT-AI-Chat-Assistant
+
+### Deploy to Azure Web App
+
+* Push your Docker image to **Azure Container Registry (ACR)**.
+* Configure the Web App to pull the image from ACR.
+* Set environment variables in Azure (`AZURE_OPENAI_KEY`, etc.).
+* Use port **8501** for Streamlit.
+
+
