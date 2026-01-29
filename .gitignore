@@ -21,3 +21,5 @@ chroma_store/
 *.xlsx
 *.xlsm
 *.xls
+
+*.pkl
