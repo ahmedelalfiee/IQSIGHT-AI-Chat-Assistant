@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual environments
+.venv/
+.venv-az/
+
+# Secrets
+.env
+
+# Vector stores / generated artifacts
+chroma_store/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+
+# Excel files (ignore all)
+*.xlsx
+*.xlsm
+*.xls

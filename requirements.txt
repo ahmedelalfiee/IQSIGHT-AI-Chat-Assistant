@@ -1,0 +1,11 @@
+langchain<1.0.0
+langchain-openai
+langchain-groq
+sentence-transformers
+langchain-community
+streamlit
+chromadb
+tiktoken
+unstructured[all-docs]
+pillow
+httpx
